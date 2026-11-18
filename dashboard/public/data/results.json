@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "population": 123161,
+  "benign": 79144,
+  "attacks": 44017,
+  "evaluationLabel": "Full Friday evaluation",
+  "detectors": [
+    {
+      "key": "rf",
+      "name": "Random Forest",
+      "threshold": 0.6,
+      "matrix": {
+        "tn": 78990,
+        "fp": 154,
+        "fn": 164,
+        "tp": 43853
+      },
+      "metrics": {
+        "precision": 0.9965005567296112,
+        "recall": 0.9962741667991912,
+        "f1": 0.9963873489048442,
+        "fpr": 0.0019458202769635097
+      },
+      "source": "friday_recompute.json"
+    },
+    {
+      "key": "xgb",
+      "name": "XGBoost",
+      "threshold": 0.7,
+      "matrix": {
+        "tn": 79010,
+        "fp": 134,
+        "fn": 31,
+        "tp": 43986
+      },
+      "metrics": {
+        "precision": 0.9969628286491388,
+        "recall": 0.9992957266510666,
+        "f1": 0.9981279144967494,
+        "fpr": 0.0016931163448903265
+      },
+      "source": "friday_recompute.json"
+    },
+    {
+      "key": "nn",
+      "name": "MLP",
+      "threshold": 0.7,
+      "matrix": {
+        "tn": 78942,
+        "fp": 202,
+        "fn": 1344,
+        "tp": 42673
+      },
+      "metrics": {
+        "precision": 0.9952886297376093,
+        "recall": 0.9694663425494695,
+        "f1": 0.9822077981862543,
+        "fpr": 0.0025523097139391487
+      },
+      "source": "friday_recompute.json"
+    },
+    {
+      "key": "snort",
+      "name": "Snort 3 Community Rules",
+      "threshold": null,
+      "matrix": {
+        "tn": 71324,
+        "fp": 7820,
+        "fn": 26562,
+        "tp": 17455
+      },
+      "metrics": {
+        "precision": 0.6906033630069238,
+        "recall": 0.39655133243973917,
+        "f1": 0.5038099636321653,
+        "fpr": 0.09880723744061458
+      },
+      "source": "snort_friday_evaluation_final.json"
+    }
+  ],
+  "resources": [
+    {
+      "key": "rf",
+      "name": "Random Forest",
+      "cpuPercent": 89.2124701534535,
+      "peakMemoryMib": 351.87109375,
+      "throughput": 54767.28339256192,
+      "throughputUnit": "flows/s",
+      "cpuMethod": "100 \u00d7 sum(CPU seconds) / sum(wall seconds), five repeats",
+      "source": "benchmark_rf_constrained_pi4_1core.json"
+    },
+    {
+      "key": "xgb",
+      "name": "XGBoost",
+      "cpuPercent": 79.99760195965528,
+      "peakMemoryMib": 332.5,
+      "throughput": 134022.73931863176,
+      "throughputUnit": "flows/s",
+      "cpuMethod": "100 \u00d7 sum(CPU seconds) / sum(wall seconds), five repeats",
+      "source": "benchmark_xgb_constrained_pi4_1core.json"
+    },
+    {
+      "key": "nn",
+      "name": "MLP",
+      "cpuPercent": 75.35089698816405,
+      "peakMemoryMib": 329.44921875,
+      "throughput": 542020.1211604401,
+      "throughputUnit": "flows/s",
+      "cpuMethod": "100 \u00d7 sum(CPU seconds) / sum(wall seconds), five repeats",
+      "source": "benchmark_nn_constrained_pi4_1core.json"
+    },
+    {
+      "key": "snort",
+      "name": "Snort 3 Community Rules",
+      "cpuPercent": 27.84397283531409,
+      "peakMemoryMib": 200.58984375,
+      "throughput": 14.157203475285185,
+      "throughputUnit": "MiB/s PCAP",
+      "cpuMethod": "Mean of one-second process-tree CPU samples",
+      "source": "benchmark_snort_constrained_pi4_1core.json"
+    }
+  ],
+  "sources": [
+    {
+      "file": "friday_recompute.json",
+      "sha256": "046b45af67fe9474f02355747a9805a1769b7fd0424cafe13096af98299c028d"
+    },
+    {
+      "file": "benchmark_rf_constrained_pi4_1core.json",
+      "sha256": "8c25219a927f5a681d264cf70556325fc95784a0e1a665bb63e7bc270d0b9de5"
+    },
+    {
+      "file": "benchmark_xgb_constrained_pi4_1core.json",
+      "sha256": "5fc967bb173cbd5d8a0b6086ce00720193911d5cecca5f3ebd365f2945aff751"
+    },
+    {
+      "file": "benchmark_nn_constrained_pi4_1core.json",
+      "sha256": "6b6d7badf07bea204547b3e2b569ab5377e0b56c0d82e54a0af8f951206b50eb"
+    },
+    {
+      "file": "snort_friday_evaluation_final.json",
+      "sha256": "235acd32a6558b0115d8c74e4812c250c1c61554358791e053444c7face0b0dd"
+    },
+    {
+      "file": "benchmark_snort_constrained_pi4_1core.json",
+      "sha256": "aaeea5e3e9bd499e39f2348e0926d49055b3679e2267de7ebb3aafd1685fdc64"
+    }
+  ],
+  "notes": [
+    "RF uses the final recomputation at 0.60; older summaries use 0.35.",
+    "Both benchmarks ran on the same Linux VM, constrained to one core. No physical Raspberry Pi was used.",
+    "ML classified 503,881 extracted validation flows; Snort inspected the full 8.84 GB Friday PCAP.",
+    "The historical Snort run's exact loaded rules were not independently confirmed.",
+    "ML CPU is the ratio of summed CPU seconds to summed wall seconds, not the unweighted mean of repeat percentages.",
+    "Snort throughput retains the original binary byte calculation (MiB/s); its JSON field was named pcap_mb_per_second.",
+    "Peak RSS includes data, libraries and allocations; model loading and warmup were excluded from ML timing.",
+    "Snort detection uses approximate tuple/time correlation: offset +61,260 seconds, tolerance \u00b1300 seconds."
+  ]
+}

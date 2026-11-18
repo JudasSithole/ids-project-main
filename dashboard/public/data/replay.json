@@ -1,0 +1,638 @@
+{
+  "status": "complete",
+  "flows": [
+    {
+      "id": "F-0000D73465",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2452344987575275e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 6.701766324113123e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 1.1474726749092037e-15,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-0001084D90",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2452344987575275e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 2.835961822711397e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 2.8855607139832706e-11,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000123566A",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2452344987575275e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 4.144297690800158e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 2.7765665201046064e-12,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-00000FB159",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 0.9999541951675573,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9999929666519165,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.9999998807907104,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-0000DBAA2A",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 0.9996921576322731,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9999862909317017,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.9991300702095032,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-0002A742DB",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 0.9999466324715524,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9999915361404419,
+          "flagged": true
+        },
+        "nn": {
+          "score": 1.0,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-0008A738FD",
+      "label": "attack",
+      "category": "Port scan",
+      "decisions": {
+        "rf": {
+          "score": 0.9996982329335566,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9998427629470825,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.9964838027954102,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000CBEE8A5",
+      "label": "attack",
+      "category": "Port scan",
+      "decisions": {
+        "rf": {
+          "score": 0.9963933926480856,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9970716238021851,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.9190185070037842,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000F6D50AA",
+      "label": "attack",
+      "category": "Port scan",
+      "decisions": {
+        "rf": {
+          "score": 0.9992343265654376,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9990142583847046,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.8647623062133789,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000767AB48",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 0.9999541951675573,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9999899864196777,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.9999998807907104,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000C02A6AB",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 3.178644160659626e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.000663499697111547,
+          "flagged": false
+        },
+        "nn": {
+          "score": 1.6500567880939343e-06,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-001631EA12",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 1.8838448764113918e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 5.34911214344902e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 5.484763576472929e-13,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-00232BC595",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 0.0006475978746360028,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.000714714580681175,
+          "flagged": false
+        },
+        "nn": {
+          "score": 5.6100197404207464e-11,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-00573A2522",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 0.12186152515357718,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.00023317475279327482,
+          "flagged": false
+        },
+        "nn": {
+          "score": 0.8073914051055908,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-00B19D3A33",
+      "label": "attack",
+      "category": "Port scan",
+      "decisions": {
+        "rf": {
+          "score": 0.9939141564828183,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9961540102958679,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.6741592884063721,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-00CC0538B8",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 0.6840149783175917,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.7019176483154297,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.5818686485290527,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-0136A30624",
+      "label": "attack",
+      "category": "Bot",
+      "decisions": {
+        "rf": {
+          "score": 0.44335548634565636,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.9819433093070984,
+          "flagged": true
+        },
+        "nn": {
+          "score": 0.014538297429680824,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-021A5AA818",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 0.2751951593586431,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.29572978615760803,
+          "flagged": false
+        },
+        "nn": {
+          "score": 0.9382652044296265,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-01A7C77DC9",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 0.0008166778283989752,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 0.0009163731010630727,
+          "flagged": false
+        },
+        "nn": {
+          "score": 0.8446661829948425,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000259F55C",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2386472306293656e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 9.2820437203045e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 1.1291335921814749e-11,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-0002B64D2F",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2452344987575275e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 3.897997430613032e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 1.557278785091487e-11,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000406EF56",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 0.0004949237263599821,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 3.279805605416186e-05,
+          "flagged": false
+        },
+        "nn": {
+          "score": 8.875126513885334e-05,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": "F-000509E723",
+      "label": "attack",
+      "category": "DDoS",
+      "decisions": {
+        "rf": {
+          "score": 1.0,
+          "flagged": true
+        },
+        "xgb": {
+          "score": 0.9999960660934448,
+          "flagged": true
+        },
+        "nn": {
+          "score": 1.0,
+          "flagged": true
+        },
+        "snort": {
+          "score": null,
+          "flagged": true
+        }
+      }
+    },
+    {
+      "id": "F-00056FAAD3",
+      "label": "benign",
+      "category": "Benign",
+      "decisions": {
+        "rf": {
+          "score": 2.2452344987575275e-05,
+          "flagged": false
+        },
+        "xgb": {
+          "score": 3.0481328394671436e-06,
+          "flagged": false
+        },
+        "nn": {
+          "score": 2.2219603747534143e-14,
+          "flagged": false
+        },
+        "snort": {
+          "score": null,
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "missing": [],
+  "datasetSha256": "9d7f6f1ef737aba562ffe6a0cb092080e95800530235f2280e60b4d6dd12aaea",
+  "splitSha256": "af44d094cf5d4b720728d97567bc2e002bfceead8c757c12d4f0e613b08d808c",
+  "population": 123161,
+  "selection": "Deterministic curated selection: first three anonymous SHA-256 IDs in benign, DDoS, port-scan, disagreement, missed-attack, false-alarm, ML-disagreement, ML-false-alarm and agreement strata, plus first ID missed by each ML detector. Deduplicate in that order, fill by ID, cap at sample size. Not representative of prevalence. No retraining or threshold selection.",
+  "strataPopulationCounts": {
+    "benign": 79144,
+    "ddos": 25602,
+    "port_scan": 18026,
+    "disagreement": 35055,
+    "missed_attack": 26902,
+    "false_alarm": 8172,
+    "ml_disagreement": 1694,
+    "rf_miss": 164,
+    "xgb_miss": 31,
+    "nn_miss": 1344,
+    "ml_false_alarm": 364,
+    "agreement": 88106
+  },
+  "provenance": {
+    "rf": {
+      "model": {
+        "file": "random_forest_baseline.joblib",
+        "sha256": "5f5b03450f44b825ece1777d4877df0169df4b9d762cd060c6b9391891b8cf28"
+      },
+      "savedScoresChecked": {
+        "file": "rf_test_predictions.npz",
+        "sha256": "a4c001863ec7f07812e79554bbff565738b85cdb7c4b1ce78984bfec8ff2c6a4",
+        "maxInferenceScoreDelta": 3.3306690738754696e-16,
+        "absoluteTolerance": 1e-05,
+        "allDecisionsIdentical": true
+      },
+      "fullMatrixVerified": true,
+      "threshold": 0.6
+    },
+    "xgb": {
+      "model": {
+        "file": "xgboost_baseline.ubj",
+        "sha256": "038980d37f621070eba866b8b9d7ff47dd6fce7fbfd9a7c6ee5f58d53d14ea67"
+      },
+      "savedScoresChecked": {
+        "file": "xgb_test_predictions.npz",
+        "sha256": "cd7b83397588fb7cad3932067ddca132ce3b89d4bef9d6683a86e975b6fd3d03",
+        "maxInferenceScoreDelta": 1.1641532182693481e-10,
+        "absoluteTolerance": 1e-05,
+        "allDecisionsIdentical": true
+      },
+      "fullMatrixVerified": true,
+      "threshold": 0.7
+    },
+    "nn": {
+      "model": {
+        "file": "neural_network_baseline.joblib",
+        "sha256": "beb1d0475e7b18e04f054e7429129cb31aa953c0fdfb6b5b36102ae5c846c4aa"
+      },
+      "savedScoresChecked": {
+        "file": "nn_test_predictions.npz",
+        "sha256": "c1ca292d0c6bef1c3fc8bc867fbea656313705bc59d7e491bdba3291526ffecc",
+        "maxInferenceScoreDelta": 2.0265579223632812e-06,
+        "absoluteTolerance": 1e-05,
+        "allDecisionsIdentical": true
+      },
+      "fullMatrixVerified": true,
+      "threshold": 0.7
+    }
+  },
+  "correlation": {
+    "method": "Original full-population first-match tuple/time correlation",
+    "rows": 123161,
+    "alertsLoaded": 1617388,
+    "matchedAlerts": 74638,
+    "offsetSeconds": 61260,
+    "toleranceSeconds": 300
+  },
+  "schemaVersion": 1,
+  "label": "Demo sample",
+  "thresholds": {
+    "rf": 0.6,
+    "xgb": 0.7,
+    "nn": 0.7
+  }
+}

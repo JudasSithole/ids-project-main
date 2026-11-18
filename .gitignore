@@ -34,3 +34,15 @@ Thumbs.db
 # Snort runtime artifacts (large)
 snort_out/
 reports/snort_alerts*.json
+
+# Dashboard dependencies, build and local QA artifacts
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+dashboard/test-results/
+dashboard/playwright-report/
+dashboard/.qa/
+dashboard/*.tsbuildinfo
+!dashboard/public/data/
+!dashboard/public/data/replay.json
+!dashboard/public/data/results.json
