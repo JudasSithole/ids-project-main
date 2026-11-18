@@ -16,6 +16,6 @@ export default defineConfig({
     screenshot: "only-on-failure", trace: "retain-on-failure" },
   webServer: [
     { command: "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4173", url: "http://127.0.0.1:4173", reuseExistingServer: false, env: { NEXT_TELEMETRY_DISABLED: "1" } },
-    { command: "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4174", url: "http://127.0.0.1:4174", reuseExistingServer: false, env: { NEXT_TELEMETRY_DISABLED: "1", IDS_REPLAY_FILE: path.resolve(".qa/unavailable-replay.json") } }
+    { command: "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4174", url: "http://127.0.0.1:4174", reuseExistingServer: false, env: { NEXT_TELEMETRY_DISABLED: "1", IDS_REPLAY_FILE: path.resolve(".qa/unavailable-replay.json"), IDS_RESULTS_FILE: path.resolve(".qa/results-missing.json") } }
   ]
 });

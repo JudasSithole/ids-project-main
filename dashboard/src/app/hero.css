@@ -9,6 +9,7 @@
 .hero-meta .eyebrow { margin:0; font-size:8px; letter-spacing:1px; }
 .hero-meta-right { display:flex; align-items:center; gap:16px; }
 .hero-meta .offline-badge { border:0; background:none; padding:0; font-size:8px; }
+.hero-meta .offline-badge span { animation:badge-blink 2.5s ease-in-out infinite; }
 .hero-meta .replay-mode { padding:2px; background:#10141b; border-color:#283344; }
 .hero-meta .replay-mode button { min-height:22px; font-size:9px; }
 .hero-meta .replay-mode button[aria-pressed=true] { background:#23345e; }
@@ -106,6 +107,7 @@
 .reference-replay .outcome,.reference-replay .outcome.revealed { font-size:9px; line-height:1.4; }
 .reference-replay .verdict.allowed { color:#b5c9bd; }
 .reference-replay .verdict.flagged { color:#f1b48e; }
+.reference-replay .lane.flagged{animation:lane-pulse 2.2s ease-in-out infinite}
 .reference-replay .label-reveal { flex:1; min-height:0; padding:10px 12px; display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:12px; background:#2f50c8; border:0; }
 .reference-replay .label-lock { display:block; }
 .reference-replay .label-lock>div { gap:6px; }
@@ -253,4 +255,5 @@
 @media(prefers-reduced-motion:reduce) {
   .flow-wires .traveller,.flow-wires .input-pulse { display:none!important; animation:none!important; }
   .packet-field rect { animation:none!important; }
+  .lane.flagged{animation:none!important}.hero-meta .offline-badge span{animation:none!important}.flow-fade{animation:none!important}
 }

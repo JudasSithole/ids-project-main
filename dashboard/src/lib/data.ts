@@ -12,5 +12,9 @@ export async function replayData(): Promise<ReplayData> {
   }
 }
 export async function resultsData(): Promise<ResultsData> {
-  return JSON.parse(await readFile(path.join(process.cwd(), "public/data/results.json"), "utf8"));
+  try {
+    return JSON.parse(await readFile(/* turbopackIgnore: true */ process.env.IDS_RESULTS_FILE || path.join(process.cwd(), "public/data/results.json"), "utf8"));
+  } catch {
+    return { schemaVersion: 1, population: 0, benign: 0, attacks: 0, evaluationLabel: "Full Friday evaluation", detectors: [], resources: [], notes: ["Replay export missing or unreadable. Run the documented exporter; no results have been invented."], sources: [] };
+  }
 }

@@ -156,6 +156,16 @@ test("an entirely missing replay export has an honest empty state", async ({ pag
   } finally { writeFileSync(".qa/unavailable-replay.json", original); }
 });
 
+test("a missing results export renders an honest empty state instead of crashing", async ({ page, context }) => {
+  const errors: string[] = [];
+  page.on("pageerror", e => errors.push(e.message));
+  await page.goto("http://127.0.0.1:4174/results");
+  await expect(page.getByRole("heading", { name: "Detection performance.", exact: true })).toBeVisible();
+  await expect(page.locator(".metrics-table tbody tr")).toHaveCount(0);
+  await expect(page.getByRole("table", { name: /confusion matrix/ })).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
+
 test("both routes use only loopback requests and render without browser errors", async ({ page, context }) => {
   const external: string[] = [], errors: string[] = [];
   page.on("pageerror", e => errors.push(e.message));
