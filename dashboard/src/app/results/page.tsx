@@ -14,6 +14,6 @@ export default async function Results() {
     <ResourceComparison resources={data.resources}/>
     <aside className="research-note"><span className="note-index">RESEARCH CONTEXT</span><div><p>Both benchmarks ran on the same Linux VM. ML used extracted flow features; Snort used packet captures. The historical resource run’s exact loaded Snort rules were not independently confirmed.</p><p>Snort correlation used a +61,260 s offset and ±300 s window. Decoder and layer-2 alerts may not map to flows. Single-core emulation does not establish performance on physical Raspberry Pi hardware.</p></div></aside>
     <details className="sources-details"><summary>Source artifacts & reproducibility</summary><p>Values were exported from retained final reports. Each matrix contains 123,161 flows. The small replay selection is a Demo sample and does not estimate population performance.</p><ul>{data.sources.map(s => <li key={s.file}><span>{s.file}</span><code>SHA-256 {s.sha256}</code></li>)}</ul></details>
-    <footer className="results-footer"><span><span className="uj-text">UJ</span> UNIVERSITY OF JOHANNESBURG / IDS RESEARCH</span><Link href="/">Return to offline replay <Icon name="arrow"/></Link></footer>
+    <footer className="results-footer"><span><span className="judas-text">JUDAS SITHOLE</span> / IDS RESEARCH</span><Link href="/">Return to offline replay <Icon name="arrow"/></Link></footer>
   </div></main>;
 }

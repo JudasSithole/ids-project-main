@@ -10,6 +10,6 @@ export default function Navigation() {
       <Link href="/" aria-current={pathname === "/" ? "page" : undefined}>Replay</Link>
       <Link href="/results" aria-current={pathname === "/results" ? "page" : undefined}>Research Results</Link>
     </nav>
-    <div className="university"><span className="uj-mark">UJ</span><span>University of<br/>Johannesburg</span></div>
+    <div className="brand"><span className="judas-mark">JUDAS</span><span className="judas-mark">SITHOLE</span></div>
   </header>;
 }

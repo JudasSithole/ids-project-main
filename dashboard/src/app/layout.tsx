@@ -7,7 +7,7 @@ import "./presentation.css";
 import "./hero.css";
 import Navigation from "@/components/Navigation";
 export const metadata: Metadata = {
-  title: "IDS Research | UJ", description: "Offline replay of recorded CICIDS2017 intrusion detection research."
+  title: "IDS Research | JUDAS SITHOLE", description: "Offline replay of recorded CICIDS2017 intrusion detection research."
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en"><body><a className="skip-link" href="#main">Skip to content</a><Navigation/>{children}</body></html>;
